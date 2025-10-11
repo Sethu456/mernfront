@@ -178,7 +178,7 @@ const MyForm = ({ editID, setFormSubmitted }) => {
           {" "}
           Date:
           <input
-            type="date-local"
+            type="date"
             name="dateOfBirth"
             value={formData.dateOfBirth}
             onChange={handleChange}
@@ -222,6 +222,7 @@ const MyForm = ({ editID, setFormSubmitted }) => {
 };
 
 export default MyForm;
+
 
 
 
