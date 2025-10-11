@@ -19,13 +19,7 @@ const Table = ({ data, handleClickEdit, handleClickDelete }) => {
         <tbody>
           {data.map((row) => (
             <tr key={row._id}>
-              <td>{row._id}</td>
-              <td>{row.name}</td>
-              <td>{row.address}</td>
-              <td>{row.gender}</td>
-              <td>{row.phoneNum}</td>
-              <td>{row.dateOfBirth}</td>
-              <td>
+               <td>
                 <button
                 style={{ marginRight: '8px' }}
                   size="small"
@@ -44,6 +38,14 @@ const Table = ({ data, handleClickEdit, handleClickDelete }) => {
                   Delete
                 </button>
               </td>
+              
+              <td>{row.name}</td>
+              <td>{row.address}</td>
+              <td>{row.gender}</td>
+              <td>{row.phoneNum}</td>
+              <td>{row.dateOfBirth}</td>
+              <td>{row._id}</td>
+             
             </tr>
           ))}
         </tbody>
@@ -53,3 +55,4 @@ const Table = ({ data, handleClickEdit, handleClickDelete }) => {
 };
 
 export default Table;
+
