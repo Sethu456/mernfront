@@ -39,7 +39,7 @@ const MyForm = ({ editID, setFormSubmitted }) => {
       );
       console.log("Record edited:", response.data);
       const date = new Date(response.data.dateOfBirth);
-      const formattedDate = date.toLocaleDateString("en-UK");
+      const formattedDate = date;
       const newData = { ...response.data, dateOfBirth: formattedDate };
       console.log("newData >>>>>", newData);
       setFormData(newData);
@@ -178,7 +178,7 @@ const MyForm = ({ editID, setFormSubmitted }) => {
           {" "}
           Date:
           <input
-            type="date"
+            type="datetime"
             name="dateOfBirth"
             value={formData.dateOfBirth}
             onChange={handleChange}
@@ -222,6 +222,7 @@ const MyForm = ({ editID, setFormSubmitted }) => {
 };
 
 export default MyForm;
+
 
 
 
