@@ -7,13 +7,13 @@ const Table = ({ data, handleClickEdit, handleClickDelete }) => {
       <table className="custom-table">
         <thead>
           <tr>
-            <th>ID</th>
+            <th>Action</th>
             <th>Twine</th>
             <th>Spec</th>
             <th>Colour</th>
             <th>Weight(Kg)</th>
             <th>Date</th>
-            <th>Action</th>
+           <th>ID</th>
           </tr>
         </thead>
         <tbody>
@@ -55,4 +55,5 @@ const Table = ({ data, handleClickEdit, handleClickDelete }) => {
 };
 
 export default Table;
+
 
