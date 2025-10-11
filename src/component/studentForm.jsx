@@ -176,7 +176,7 @@ const MyForm = ({ editID, setFormSubmitted }) => {
       <div className="row">
         <label>
           {" "}
-          Date:
+          Date(mm/dd/yyyy):
           <input
             type="date"
             name="dateOfBirth"
@@ -222,6 +222,7 @@ const MyForm = ({ editID, setFormSubmitted }) => {
 };
 
 export default MyForm;
+
 
 
 
