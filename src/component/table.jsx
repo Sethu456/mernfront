@@ -43,7 +43,7 @@ const Table = ({ data, handleClickEdit, handleClickDelete }) => {
               <td>{row.address}</td>
               <td>{row.gender}</td>
               <td>{row.phoneNum}</td>
-              <td>{row.dateOfBirth}</td>
+              <td>{row.dateOfBirth}.toLocaleDateString("en-UK")</td>
               <td>{row._id}</td>
              
             </tr>
@@ -55,5 +55,6 @@ const Table = ({ data, handleClickEdit, handleClickDelete }) => {
 };
 
 export default Table;
+
 
 
