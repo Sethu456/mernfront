@@ -189,13 +189,14 @@ const MyForm = ({ editID, setFormSubmitted }) => {
         <label>
           {" "}
           Colour:
-          <select name="gender" value={formData.gender} onChange={handleChange}>
-            <option value="">Select Colour</option>
-            <option value="White">White</option>
-            <option value="Green">Green</option>
-          </select>
-          <span className="error">{formErrors.gender}</span>
-        </label>
+           <input
+            type="text"
+            name="gender"
+            value={formData.gender}
+            onChange={handleChange}
+          />
+          <span className="error">{formErrors.address}</span>
+          </label>
       </div>
 
       <div className="row">
@@ -222,6 +223,7 @@ const MyForm = ({ editID, setFormSubmitted }) => {
 };
 
 export default MyForm;
+
 
 
 
