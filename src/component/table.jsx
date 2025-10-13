@@ -13,8 +13,9 @@ const Table = ({ data, handleClickEdit, handleClickDelete }) => {
             <th>Colour</th>
             <th>Weight(Kg)</th>
             <th>Date</th>
+             <th>ID</th>
              <th>Action</th>
-           <th>ID</th>
+          
           </tr>
         </thead>
         <tbody>
@@ -56,6 +57,7 @@ const Table = ({ data, handleClickEdit, handleClickDelete }) => {
 };
 
 export default Table;
+
 
 
 
