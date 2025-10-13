@@ -45,7 +45,7 @@ const Table = ({ data, handleClickEdit, handleClickDelete }) => {
               <td>{row.gender}</td>
               <td>{row.phoneNum}</td>
               <td>{new Date(row.dateOfBirth).toLocaleDateString("en-GB")}</td>
-              <td>{row._id}</td>
+             
               <td>
                 <button
                   style={{ marginRight: "8px" }}
@@ -72,3 +72,4 @@ const Table = ({ data, handleClickEdit, handleClickDelete }) => {
 };
 
 export default Table;
+
