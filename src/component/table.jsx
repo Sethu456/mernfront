@@ -1,49 +1,64 @@
-import React from "react";
-import "./style.css"; // Import your CSS file
+import React, { useState } from "react";
+import "./style.css";
 
 const Table = ({ data, handleClickEdit, handleClickDelete }) => {
+  const [filterDate, setFilterDate] = useState("");
+
+   const filteredData = filterDate
+    ? data.filter(
+        (row) =>
+          new Date(row.dateOfBirth).toISOString().split("T")[0] === filterDate
+      )
+    : data;
+
   return (
     <div className="table-container">
+      {/* Date filter input */}
+      <div style={{ marginBottom: "10px" }}>
+        <label>
+          Filter by Date:{" "}
+          <input
+            type="date"
+            value={filterDate}
+            onChange={(e) => setFilterDate(e.target.value)}
+          />
+        </label>
+      </div>
+
       <table className="custom-table">
         <thead>
           <tr>
-           
             <th>Twine</th>
             <th>Spec</th>
             <th>Colour</th>
             <th>Weight(Kg)</th>
             <th>Date</th>
-             <th>ID</th>
-             <th>Action</th>
-          
+            <th>ID</th>
+            <th>Action</th>
           </tr>
         </thead>
         <tbody>
-          {data.map((row) => (
+          {filteredData.map((row) => (
             <tr key={row._id}>
-             
-              
               <td>{row.name}</td>
               <td>{row.address}</td>
               <td>{row.gender}</td>
               <td>{row.phoneNum}</td>
-              <td>{row.dateOfBirth}</td>
+              <td>{new Date(row.dateOfBirth).toLocaleDateString("en-GB")}</td>
               <td>{row._id}</td>
-               <td>
+              <td>
                 <button
-                style={{ marginRight: '8px' }}
+                  style={{ marginRight: "8px" }}
                   size="small"
                   variant="outlined"
-                   onClick={() => handleClickEdit(row._id)}
-
+                  onClick={() => handleClickEdit(row._id)}
                 >
                   Edit
                 </button>
-                
                 <button
                   size="small"
                   variant="outlined"
-                   onClick={() => handleClickDelete(row._id)}
+                  onClick={() => handleClickDelete(row._id)}
                 >
                   Delete
                 </button>
@@ -57,12 +72,3 @@ const Table = ({ data, handleClickEdit, handleClickDelete }) => {
 };
 
 export default Table;
-
-
-
-
-
-
-
-
-
