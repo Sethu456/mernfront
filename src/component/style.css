@@ -3,6 +3,7 @@
     --dark-element:  #FFFFFF;
     --dark-border: #333;
     --success-color: #4CAF50; 
+    --input-clr:  rgba(255, 0, 0, 0.3);
 }
 
 body {
@@ -17,9 +18,9 @@ form {
     margin: 20px auto;
     padding: 24px;
     background-color: var(--dark-element);
-    border: 1px solid var(--dark-border);
+    border: 1px solid var( --input-clr);
     border-radius: 0.75rem;
-    box-shadow: 0 6px 15px rgba(255, 0, 0, 0.2);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
 }
 
 .row {
@@ -120,6 +121,7 @@ button:hover {
     font-size: 0.875rem; 
     margin-top: 5px;
 }
+
 
 
 
