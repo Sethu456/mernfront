@@ -1,7 +1,7 @@
 :root {
     --dark-bg: #3d11f0; 
     --dark-element:  #FFFFFF;
-    --dark-border: #ebe834;
+    --dark-border: #34d3eb;
     --success-color: #4CAF50; 
     --input-clr:  rgba(255, 0, 0, 0.8);
 }
@@ -121,6 +121,7 @@ button:hover {
     font-size: 0.875rem; 
     margin-top: 5px;
 }
+
 
 
 
