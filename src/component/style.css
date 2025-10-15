@@ -40,7 +40,7 @@ label {
     display: block;
     margin-bottom: 8px;
     font-weight: 500;
-    color: #E5E7EB;
+    color: #5534eb;
 }
 
 input, select {
@@ -120,5 +120,6 @@ button:hover {
     font-size: 0.875rem; 
     margin-top: 5px;
 }
+
 
 
