@@ -54,6 +54,7 @@ input, select {
     color: #000000;
     border-radius: 0.5rem;
     transition: border-color 0.2s;
+    font-size: 2.0rem;
 }
 input:focus, select:focus {
     outline: none;
@@ -123,6 +124,7 @@ button:hover {
     font-size: 0.875rem; 
     margin-top: 5px;
 }
+
 
 
 
