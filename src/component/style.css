@@ -3,7 +3,7 @@
     --dark-element:  #FFFFFF;
     --dark-border: #e8eb34;
     --success-color: #4CAF50; 
-    --input-clr:  rgba(255, 0, 0, 0.3);
+    --input-clr:  rgba(255, 0, 0, 0.8);
 }
 
 body {
@@ -121,6 +121,7 @@ button:hover {
     font-size: 0.875rem; 
     margin-top: 5px;
 }
+
 
 
 
