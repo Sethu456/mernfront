@@ -1,6 +1,6 @@
 :root {
     --dark-bg: #34d3eb;
-    --dark-element:  #FFFFFF;
+    --dark-element:  #f5e505;
     --dark-border: #34d3eb;
     --success-color: #4CAF50; 
     --input-clr:  rgba(255, 0, 0, 0.8);
@@ -50,7 +50,7 @@ input, select {
     box-sizing: border-box;
     background-color: #99f505;
     border: 1px solid var(--dark-border);
-    color: #3d11f0;
+    color: #3905f5;
     border-radius: 0.5rem;
     transition: border-color 0.2s;
 }
@@ -121,6 +121,7 @@ button:hover {
     font-size: 0.875rem; 
     margin-top: 5px;
 }
+
 
 
 
