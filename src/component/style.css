@@ -48,7 +48,7 @@ input, select {
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
-    background-color: #99f505;
+    background-color: #f0de11;
     border: 1px solid var(--dark-border);
     color: #3905f5;
     border-radius: 0.5rem;
@@ -121,6 +121,7 @@ button:hover {
     font-size: 0.875rem; 
     margin-top: 5px;
 }
+
 
 
 
