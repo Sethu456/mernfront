@@ -41,7 +41,7 @@ label {
     display: block;
     margin-bottom: 8px;
     font-weight: 500;
-    color: #5c11f0;
+    color: #ffffff;
 }
 
 input, select {
@@ -121,6 +121,7 @@ button:hover {
     font-size: 0.875rem; 
     margin-top: 5px;
 }
+
 
 
 
