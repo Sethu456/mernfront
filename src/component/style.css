@@ -50,7 +50,7 @@ input, select {
     box-sizing: border-box;
     background-color: #f9eba5;
     border: 1px solid var(--dark-border);
-    color: #3905f5;
+    color: #000000;
     border-radius: 0.5rem;
     transition: border-color 0.2s;
 }
@@ -121,6 +121,7 @@ button:hover {
     font-size: 0.875rem; 
     margin-top: 5px;
 }
+
 
 
 
