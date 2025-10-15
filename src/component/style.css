@@ -1,6 +1,6 @@
 :root {
     --dark-bg: #FFFFFF; 
-    --dark-element: #1a1a1a;
+    --dark-element:  #FFFFFF;
     --dark-border: #333;
     --success-color: #4CAF50; 
 }
@@ -120,4 +120,5 @@ button:hover {
     font-size: 0.875rem; 
     margin-top: 5px;
 }
+
 
